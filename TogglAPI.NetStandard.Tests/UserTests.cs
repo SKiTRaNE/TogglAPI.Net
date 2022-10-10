@@ -55,8 +55,8 @@ namespace Toggl.Tests
                             CreatedWith = "TimeEntryTestAdd",
                             Description = "Test Desc" + DateTime.Now.Ticks,
                             Duration = 900,
-                            Start = DateTime.Now.ToIsoDateStr(),
-                            Stop = DateTime.Now.AddMinutes(20).ToIsoDateStr(),
+                            Start = DateTime.Now,
+                            Stop = DateTime.Now.AddMinutes(20),
                             ProjectId =Constants.DefaultProjectId,
                             WorkspaceId = Constants.DefaultWorkspaceId
                     });

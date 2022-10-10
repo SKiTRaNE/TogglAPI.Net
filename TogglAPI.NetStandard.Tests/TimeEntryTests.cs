@@ -30,8 +30,9 @@ namespace Toggl.Tests
 					IsBillable = true,
 					CreatedWith = "TogglAPI.Net",
 					Duration = 900,
-					Start = startDate.AddMonths(i).ToIsoDateStr(),
-					WorkspaceId = DefaultWorkspaceId
+					Start = startDate.AddMonths(i).AddMinutes(i),
+					WorkspaceId = DefaultWorkspaceId,
+					Description = $"{i}"
 				});
 				Assert.IsNotNull(te);
 			}
@@ -72,7 +73,7 @@ namespace Toggl.Tests
 					IsBillable = true,
 					CreatedWith = "TogglAPI.Net",
 					Duration = 900,
-					Start = DateTime.Now.ToIsoDateStr(),
+					Start = DateTime.Now,
 					WorkspaceId = DefaultWorkspaceId,
 					TaskId = task1.Id
 				});
@@ -87,7 +88,7 @@ namespace Toggl.Tests
 					IsBillable = true,
 					CreatedWith = "TogglAPI.Net",
 					Duration = 900,
-					Start = DateTime.Now.ToIsoDateStr(),
+					Start = DateTime.Now,
 					WorkspaceId = DefaultWorkspaceId,
 					TaskId = task2.Id
 				});
@@ -107,7 +108,7 @@ namespace Toggl.Tests
 				IsBillable = true,
 				CreatedWith = "TogglAPI.Net",
 				Duration = 900,
-				Start = DateTime.Now.ToIsoDateStr(),				
+				Start = DateTime.Now,				
 				WorkspaceId = DefaultWorkspaceId
 				
 			});
@@ -131,8 +132,8 @@ namespace Toggl.Tests
 				IsBillable = true,
 				CreatedWith = "TogglAPI.Net",
 				Duration = 900,
-				Start = DateTime.Now.ToIsoDateStr(),
-				Stop = DateTime.Now.AddMinutes(10).ToIsoDateStr(),
+				Start = DateTime.Now,
+				Stop = DateTime.Now.AddMinutes(10),
 				WorkspaceId = DefaultWorkspaceId
 			});
 
@@ -161,7 +162,7 @@ namespace Toggl.Tests
 				IsBillable = true,
 				CreatedWith = "TogglAPI.Net",
 				Duration = 900,
-				Start = DateTime.Now.ToIsoDateStr(),
+				Start = DateTime.Now,
 				WorkspaceId = DefaultWorkspaceId
 
 			});
@@ -189,7 +190,7 @@ namespace Toggl.Tests
 				IsBillable = true,
 				CreatedWith = "TogglAPI.Net",
 				Duration = 900,
-				Start = DateTime.Now.ToIsoDateStr(),
+				Start = DateTime.Now,
 				WorkspaceId = DefaultWorkspaceId
 
 			});
@@ -230,7 +231,7 @@ namespace Toggl.Tests
 					IsBillable = true,
 					CreatedWith = "TogglAPI.Net",
 					Duration = 900,
-					Start = DateTime.Now.ToIsoDateStr(),
+					Start = DateTime.Now,
 					WorkspaceId = DefaultWorkspaceId,
 					TaskId = task1.Id
 				});
@@ -245,7 +246,7 @@ namespace Toggl.Tests
 					IsBillable = true,
 					CreatedWith = "TogglAPI.Net",
 					Duration = 900,
-					Start = DateTime.Now.ToIsoDateStr(),
+					Start = DateTime.Now,
 					WorkspaceId = DefaultWorkspaceId,
 					TaskId = task2.Id
 				});

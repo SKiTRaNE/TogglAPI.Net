@@ -151,8 +151,8 @@ namespace Toggl.Tests
 					CreatedWith = "TimeEntryTestAdd",
 					Description = "Test Desc" + DateTime.Now.Ticks,
 					Duration = 900,
-					Start = DateTime.Now.AddDays(-i).ToIsoDateStr(),
-					Stop = DateTime.Now.AddDays(-i).AddMinutes(20).ToIsoDateStr(),
+					Start = DateTime.Now.AddDays(-i),
+					Stop = DateTime.Now.AddDays(-i).AddMinutes(20),
 					WorkspaceId = DefaultWorkspaceId,
 					TaskId = task1.Id
 				};
@@ -168,8 +168,8 @@ namespace Toggl.Tests
 					CreatedWith = "TimeEntryTestAdd",
 					Description = "Test Desc" + DateTime.Now.Ticks,
 					Duration = 900,
-					Start = DateTime.Now.AddDays(-i).ToIsoDateStr(),
-					Stop = DateTime.Now.AddDays(-i).AddMinutes(20).ToIsoDateStr(),
+					Start = DateTime.Now.AddDays(-i),
+					Stop = DateTime.Now.AddDays(-i).AddMinutes(20),
 					WorkspaceId = DefaultWorkspaceId,
 					TaskId = task2.Id
 				};
@@ -229,8 +229,8 @@ namespace Toggl.Tests
 					CreatedWith = "TimeEntryTestAdd",
 					Description = "Test Desc" + DateTime.Now.Ticks,
 					Duration = 900,
-					Start = DateTime.Now.AddDays(-i).ToIsoDateStr(),
-					Stop = DateTime.Now.AddDays(-i).AddMinutes(20).ToIsoDateStr(),
+					Start = DateTime.Now.AddDays(-i),
+					Stop = DateTime.Now.AddDays(-i).AddMinutes(20),
 					WorkspaceId = DefaultWorkspaceId,
 					TaskId = task1.Id
 				};
@@ -246,8 +246,8 @@ namespace Toggl.Tests
 					CreatedWith = "TimeEntryTestAdd",
 					Description = "Test Desc" + DateTime.Now.Ticks,
 					Duration = 900,
-					Start = DateTime.Now.AddDays(-i).ToIsoDateStr(),
-					Stop = DateTime.Now.AddDays(-i).AddMinutes(20).ToIsoDateStr(),
+					Start = DateTime.Now.AddDays(-i),
+					Stop = DateTime.Now.AddDays(-i).AddMinutes(20),
 					WorkspaceId = DefaultWorkspaceId,
 					TaskId = task2.Id
 				};
@@ -263,8 +263,8 @@ namespace Toggl.Tests
 					CreatedWith = "TimeEntryTestAdd",
 					Description = "Test Desc" + DateTime.Now.Ticks,
 					Duration = 900,
-					Start = DateTime.Now.AddDays(-i).ToIsoDateStr(),
-					Stop = DateTime.Now.AddDays(-i).AddMinutes(20).ToIsoDateStr(),
+					Start = DateTime.Now.AddDays(-i),
+					Stop = DateTime.Now.AddDays(-i).AddMinutes(20),
 					WorkspaceId = DefaultWorkspaceId,
 					TaskId = task3.Id
 				};
